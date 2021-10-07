@@ -21,6 +21,7 @@ export default class App extends Component {
 
   render() {
     const { good, neutral, bad } = this.state;
+    const {onLeaveFeedback} = this;
 
     const countTotalFeedback = good + bad + neutral;
     const countPositiveFeedbackPercentage = Math.round(
@@ -33,7 +34,7 @@ export default class App extends Component {
         <Section title="Please leave feedback">
           <FeedbackOptions
             options={options}
-            onLeaveFeedback={this.onLeaveFeedback}
+            onLeaveFeedback={onLeaveFeedback}
           />
         </Section>
         <Section title="Statistics">
