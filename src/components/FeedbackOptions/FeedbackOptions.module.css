@@ -1,0 +1,27 @@
+.btn {
+    display: inline-block;
+    box-sizing: border-box;
+    padding: 0 5px;
+    margin: 0 15px 15px 0;
+    outline: none;
+    border: 2px solid rgb(49, 38, 139);
+    border-radius: 10%;
+
+    font-size: 12px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #000;
+    background-color: rgb(189, 152, 72);
+    box-shadow: 0 4px 6px rgb(65 132 144 / 10%), 0 1px 3px rgb(0 0 0 / 8%);
+    cursor: pointer;
+    user-select: none;
+    appearance: none;
+    touch-action: manipulation;
+    vertical-align: top;
+    transition: box-shadow 0.2s;
+  }
+  
+  .btn:active {
+    background-color: #808080;
+  }
+  
